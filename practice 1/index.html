@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<title>Definatly not a website ... | Cart</title>
+		<style>
+		body {
+			background-color: #F0F0F0;
+			padding: 0;
+			margin: 0;
+			font-family: Calribi
+		}
+		</style>
+		<style>
+		.column {
+			float: left;
+			width: 50%
+		}		
+		.box {
+			background-color: white;
+			box-shadow: 0.2rem 0.2rem #C0C0C0;
+		}
+		</style>
+		<style>
+		.nav {
+			background-color: #101010;
+			color: white;
+			height: 3rem;
+			padding: 0;
+			margin: 0;
+		}
+		.nav a h1 {
+			float: left;
+			padding: 0;
+			margin: 0;
+			margin-left: 1rem;
+		}
+		.nav a {
+			text-decoration: none;
+			color: white;
+		}
+		.nav a:hover {
+			text-decoration: none;
+			color: blue;
+		}
+		</style>
+		<style>
+		.cart div {
+			width: 12rem;
+			height: 17rem;
+		}
+		.cart div img {
+			background-color: #E0E0E0;
+			width: 10rem;
+			height: 10rem;
+			margin-left: 1rem;
+			margin-bottom: 1rem;
+		}
+		.checkout form {
+			margin-left: 1rem;
+			margin-bottom: 1rem;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="nav">
+			<a href="products.html"><h1>Products</h1></a>
+			<a href="index.html"><h1><u>Cart</u></h1></a>
+		</div>
+		
+		<div class="column">
+			<h2>Your cart</h2>
+			<ul class="cart">
+				<div class="box">
+					<p>(1) Book</p>
+					<img width="10rem" height="10rem">
+					<button>Remove</button>
+					<p>£10</p>
+				</div>
+				
+				<div class="box">
+					<p>(1) Banana</p>
+					<img width="10rem" height="10rem">
+					<button>Remove</button>
+					<p>£100</p>
+				</div>
+				
+				<div class="box">
+					<p>(10) Eggs</p>
+					<img width="10rem" height="10rem">
+					<button>Remove</button>
+					<p>£50</p>
+				</div>
+			</ul>
+		</div>
+		<div class="column">
+			<h2>Order summery</h2>
+			<div class="box checkout">
+				<form action="checkout.html">
+					<p>(1) Book £10<p>
+					<p>(1) Banana £100<p>
+					<p>(10) Eggs £50<p>
+					<input type="submit"></input>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
