@@ -8,9 +8,8 @@ body, html {
     background-color: white;
     padding-bottom: 10px;
 }
-.window .title p{
+.window .title{
     height: 20px;
-    position: absolute;
     width: 100%;
     background-color: gray;
     color: white;
