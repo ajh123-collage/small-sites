@@ -8,22 +8,60 @@
 </head>
 <body>
     <script>
-        document.write("Asda1234");
+        function test1() {
+            document.write("Asda1234");     
 
-        body = document.querySelector("body");
-        p = document.createElement("br");
-        body.appendChild(p);
+            body = document.querySelector("body");
+            p = document.createElement("br");
+            body.appendChild(p);        
+        
+
+            x="sam";
+            document.write("Hi "+ x);       
+
+            alert("Please be carefull of JavaScript");      
+
+            x=prompt("sam", "");
+            document.write("Hi "+ x);
+        }
+    </script>       
+
+    <script>
+        function test2() {
+            x = 3
+            y = 20*(x+12)
+            alert(y)
+        }
+    </script>       
 
 
-        x="sam";
-        document.write("Hi "+ x);
+    <script>
+        function test3() {
+            a = Number(prompt("Value for A", 3.141592654))
+            b = Number(prompt("Value for B", 3.141592654))      
 
-        alert("Please be carefull of JavaScript");
+            c = a + b
+            d = a - b
+            alert("A + B = "+ c)
+            alert("A - B = "+ d)
+        }
+    </script>       
 
-        x=prompt("sam", "");
-        document.write("Hi "+ x);
+    <div class="window" style="width: 160px;">
+        <div class="title"><p>JavaScript Tests</p></div>
+        <button onclick="test1()">Test 1</button>
+        <button onclick="test2()">Test 2</button>
+        <button onclick="test3()">Test 3</button>
+    </div>       
+
+
+    <script>
+        var isDown = false;
+        div = document.querySelector(".window")
+        div.style.position = "absolute";
+        div.style.left = "0px";
+        div.style.top = "0px";       
     </script>
-
 
 </body>
 </html>
