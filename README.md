@@ -7,7 +7,7 @@ This contains all the websites which I made at collage.
 1. [A little Webstie](https://github.com/ajh123-collage/small-sites/tree/main/lesons/learning/1%20-%20A%20little%20website)
     - [View Live](https://web-collage.minersonline.tk/lesons/learning/1%20-%20A%20little%20website)
 2. [Forms and tables](https://github.com/ajh123-collage/small-sites/tree/main/lesons/learning/2%20-%20Forms%20and%20tables)
-    - [View Live](https://web-collage.minersonline.tk/learning/2%20-%20Forms%20and%20tables)
+    - [View Live](https://web-collage.minersonline.tk/lesons/learning/2%20-%20Forms%20and%20tables)
 3. [My Google Copy](https://github.com/ajh123-collage/small-sites/tree/main/lesons/learning/3%20-%20My%20Google%20copy)
     - [View Live](https://web-collage.minersonline.tk/lesons/learning/3%20-%20My%20Google%20copy)
 4. [One of my JS things](https://github.com/ajh123-collage/small-sites/tree/main/lesons/learning/4%20-%20One%20of%20my%20JS%20things)
