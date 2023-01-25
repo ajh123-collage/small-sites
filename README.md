@@ -26,6 +26,10 @@ This contains all the websites which I made at collage.
     - [View Live](https://web-collage.minersonline.tk/lesons/learning/10%20-%20CSS%20Grids)
 
 
+* [New Salford Learning City Website](https://github.com/ajh123-collage/small-sites/tree/main/lesons/other/Learning%20City%20Website%202)
+    - [View Live](https://web-collage.minersonline.tk/lesons/other/Learning%20City%20Website%202)
+
+
 ## Notes
 Folders may contain references to other companies.
 
