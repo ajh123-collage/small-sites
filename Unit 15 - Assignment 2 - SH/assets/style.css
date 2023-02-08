@@ -6,3 +6,20 @@ html, body {
 .footer { 
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.footer a {
+    color: white;
+    filter: brightness(50%);
+}
+
+.my_card {
+    width: 18rem;
+}
+
+.my_card a {
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    font-size: 2rem;
+}
