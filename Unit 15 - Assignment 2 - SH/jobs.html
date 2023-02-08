@@ -9,7 +9,7 @@
 	<link href="assets/style.css" rel="stylesheet">
 	<script type="module" src="./assets/scripts/index.js"></script>
 </head>
-	<body>
+	<body class="d-flex flex-column min-vh-100">
 
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 			<div class="container-fluid">
@@ -27,13 +27,13 @@
 							<a class="nav-link" href="index.html">About Us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Contact Us</a>
+							<a class="nav-link" href="contact.html">Contact Us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="jobs.html">Jobs</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Courses</a>
+							<a class="nav-link" href="courses.html">Courses</a>
 						</li>
 					</ul>
 				</div>
@@ -41,15 +41,18 @@
 		</nav>
 
 
-		<div class="container fill">
+		<main class="container wrapper flex-grow-1">
 			<h1>Our People.</h1>
 			<hr>
-			<p>At Hot Beans our employees are the most important! You could be on this list too, just apply for a job.</p>
+			<p>
+				At Hot Beans our employees are the most important! 
+				You could be on this list too, just apply <a href="contact.html">for a job</a>.
+			</p>
 			
 			<div class="row align-items-center">
 				<div class="col">
 					<div class="card" style="width: 18rem;">
-						<img src="..." class="card-img-top" alt="...">
+						<img src="assets/images/jane_smith.jpg" class="card-img-top" alt="An image of a s">
 						<div class="card-body">
 							<h5 class="card-title">Jane Smith</h5>
 							<h6 class="card-subtitle mb-2 text-muted">Apprientiship Manager</h6>
@@ -66,7 +69,7 @@
 				</div>
 				<div class="col">
 					<div class="card" style="width: 18rem;">
-						<img src="..." class="card-img-top" alt="...">
+						<img src="assets/images/john_doe.jpg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">John Doe</h5>
 							<h6 class="card-subtitle mb-2 text-muted">Front End Desginer</h6>
@@ -83,7 +86,7 @@
 				</div>
 				<div class="col">
 					<div class="card" style="width: 18rem;">
-						<img src="..." class="card-img-top" alt="...">
+						<img src="assets/images/jacob_marley.jpg" class="card-img-top" alt="An image of Jacob Marley">
 						<div class="card-body">
 							<h5 class="card-title">Jacob Marley</h5>
 							<h6 class="card-subtitle mb-2 text-muted">Our CEO</h6>
@@ -102,7 +105,7 @@
 				</div>
 				<div class="col">
 					<div class="card" style="width: 18rem;">
-						<img src="..." class="card-img-top" alt="...">
+						<img src="assets/images/liz_truss.jpg" class="card-img-top" alt="An image of Liz Truss">
 						<div class="card-body">
 							<h5 class="card-title">Liz Truss</h5>
 							<h6 class="card-subtitle mb-2 text-muted">Full stack developer</h6>
@@ -123,6 +126,11 @@
 			<h1>Jobs.</h1>
 			<hr>
 			<p>
+				You may join the team at Hot Beans. Below are the jobs which we provide. 
+				You may apply on our <a href="contact.html">contact form.</a>
+				You are able to work from home too; just tell us in your application.
+				Take a look at <a href="courses.html">development courses</a> so you can get started.
+			</p>
 
 			<table class="table table-dark table-striped">
 				<thead>
@@ -170,11 +178,9 @@
 					</tr>
 				</tbody>
 			</table>
+		</main>
 
-			</p>
-		</div>
-
-		<footer class="bg-dark text-center text-white">
+		<footer class="mt-auto bg-dark text-center text-white">
 			<!-- Copyright -->
 			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
 				<a href="index.html">Hot Beans Web</a> &copy; 1975 - 2023
