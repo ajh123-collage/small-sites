@@ -30,23 +30,31 @@ footer a {
 .viewport {
     display: grid;
     grid-template-rows: auto 1fr 100px 50px;
-    grid-template-columns: auto 90% auto;
+    grid-template-columns: auto 45% 45% auto;
 }
 
 header {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: 1;
 }
 
-main {
+.body-full {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.body-left {
     grid-column: 2;
-    grid-row: 2;
+}
+
+.body-right {
+    grid-column: 3;
 }
 
 footer {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: 4;
 }
 
