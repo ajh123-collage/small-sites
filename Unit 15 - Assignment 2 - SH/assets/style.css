@@ -1,15 +1,18 @@
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.footer { 
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.footer a {
+footer { 
     color: white;
-    filter: brightness(50%);
+    background-color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+
+footer a {
+    color: white;
 }
 
 .my_card {
@@ -22,4 +25,50 @@ html, body {
 
 .nav-link {
     font-size: 2rem;
+}
+
+.viewport {
+    display: grid;
+    grid-template-rows: auto 1fr 100px 50px;
+    grid-template-columns: auto 90% auto;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 4;
+}
+
+nav {
+    background-color: rgba(219, 218, 218, 0.87);
+    width: 100%;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+  
+nav ul li a {
+    padding-left: 8px;
+    height: 60px;
+    display: block;
+    background-color: #dddddd;
 }
