@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>A site</title>
+	<title>Hotbeans Web</title>
 	<link href="assets/github-markdown.css" rel="stylesheet">
 	<link href="assets/style.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="assets/images/logo.png">
 	<script type="module" src="./assets/scripts/index.js"></script>
 </head>
 	<body class="viewport">
@@ -34,35 +35,38 @@
 
 		<main class="markdown-body body-full">
 			<h1>Contact / Application Form.</h1>
-			<div class="row align-items-center">
-				<div class="col">
-					<p>
-						This contact form can be used to send us a message or 
-						apply for a <a href="jobs.html">job</a>. Take a look at 
-						our <a href="courses.html">development courses</a> so you can get 
-						started if you're not ready. 
-					</p>
-					<p>
-						You may look at some of our 
-						<a href="jobs.html">team members</a> to see if you will 
-						fit it.							
-					</p>
+			<p>
+				This contact form can be used to send us a message or 
+				apply for a <a href="jobs.html">job</a>. Take a look at 
+				our <a href="courses.html">development courses</a> so you can get 
+				started if you're not ready. 
+
+				For a job application you need to upload a file containing your information.
+			</p>
+			<p>
+				You may look at some of our 
+				<a href="jobs.html">team members</a> to see if you will 
+				fit it.							
+			</p>
+			
+			<hr>
+
+			<form method="get" action="https://google.com">
+				<div>
+					<p>We'll never share your details with anyone else (unless required by law).</p>
+					<label for="exampleInputEmail1">Email address (*)</label><br>
+					<input type="email" id="exampleInputEmail1" required aria-describedby="emailHelp">
+					<br>
+					<label for="other">Other details</label><br>
+					<input type="file" id="other" multiple aria-describedby="emailHelp">
 				</div>
-				<div class="col">
-					<form>
-						<div class="mb-3">
-							<label for="exampleInputEmail1" class="form-label">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-						</div>
-						<div class="input-group">
-							<span class="input-group-text">Message</span>
-							<textarea class="form-control" aria-label="Message"></textarea>
-						</div>
-						<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+				<br>
+				<div>
+					<span>Message (*)</span><br>
+					<textarea name="q" id="q" aria-label="Message" required></textarea>
 				</div>
-			</div>
+				<button type="submit">Submit</button>
+			</form>
 		</main>
 
 		<footer>

@@ -17,6 +17,19 @@ footer a {
 
 .my_card {
     width: 18rem;
+    height: auto;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.card_group {
+    display: flex;
+	flex-wrap: wrap;
 }
 
 .my_card a {
@@ -74,9 +87,16 @@ nav ul li {
     float: left;
 }
   
-nav ul li a {
-    padding-left: 8px;
-    height: 60px;
+nav a {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 3px;
+    margin-left: 8px;
+    height: calc(60px - 3px);
     display: block;
-    background-color: #dddddd;
+    background-color: #c4c4c4c4;
+}
+
+nav .active {
+    background-color: white;
 }
