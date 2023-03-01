@@ -29,6 +29,8 @@ This contains all the websites which I made at collage.
 * [New Salford Learning City Website](https://github.com/ajh123-collage/small-sites/tree/main/lesons/other/Learning%20City%20Website%202)
     - [View Live](https://web-collage.minersonline.tk/lesons/other/Learning%20City%20Website%202)
 
+* [My second assignment](https://github.com/ajh123-collage/small-sites/tree/main/lesons/other/Unit%2015%20-%20Assignment%202%20-%20SH)
+    - [View Live](https://web-collage.minersonline.tk/lesons/other/Unit%2015%20-%20Assignment%202%20-%20SH)
 
 ## Notes
 Folders may contain references to other companies.
