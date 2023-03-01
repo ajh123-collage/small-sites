@@ -100,3 +100,141 @@ nav a {
 nav .active {
     background-color: white;
 }
+
+
+/* Forms */
+  /* Style the form with a coloured background, along with curved corners and a drop shadow */
+  
+  
+  .markdown-body form{
+    margin: 20px auto;
+    padding: 40px 20px;
+    overflow: auto;
+    background: #ffffff;
+    border: 1px solid #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;
+  }
+  
+  
+  /* Give form elements consistent margin, padding and line height */
+  
+  .markdown-body form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .markdown-body form ul li {
+    margin: .9em 0 0 0;
+    padding: 0;
+  }
+  
+  .markdown-body form * {
+    line-height: 1em;
+  }
+  
+  
+  /* The field labels */
+  
+  .markdown-body label {
+    display: block;
+    float: left;
+    clear: left;
+    text-align: right;
+    width: 15%;
+    padding: .4em 0 0 0;
+    margin: .15em .5em 0 0;
+  }
+  
+  
+  /* The fields */
+  
+  .markdown-body input, .markdown-body select, .markdown-body textarea {
+    display: block;
+    margin: 0;
+    padding: .4em;
+    width: 80%;
+  }
+  
+  .markdown-body input, .markdown-body textarea, .date {
+    border: 2px solid #666;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .markdown-body input {
+    font-size: .9em;
+  }
+  
+  .markdown-body select {
+    padding: 0;
+    margin-bottom: 2.5em;
+    position: relative;
+    top: .7em;
+  }
+  
+  .markdown-body textarea {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    height: 5em;
+    line-height: 1.5em;
+  }
+  
+  .markdown-body textarea#content {
+    font-family: "Courier New", courier, fixed;
+  }
+    
+  
+  /* Place a border around focused fields */
+  
+  .markdown-body form *:focus {
+    border: 2px solid #7c412b;
+    outline: none;
+  }
+  
+  
+  /* Display correctly filled-in fields with a green background */
+  
+  .markdown-body input:valid, textarea:valid {
+    background: #efe;
+  }
+  
+  
+  /* Submit buttons */
+  
+  .buttons {
+    text-align: center;
+    margin: 40px 0 0 0;
+  }
+  
+  .markdown-body input[type="submit"] {
+    display: inline;
+    margin: 0 20px;
+    width: 12em;
+    padding: 10px;
+    border: 2px solid #7c412b;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;  
+    border-radius: 5px;
+    color: #000000;
+    background: #008800;
+    font-weight: bold;
+    -webkit-appearance: none;
+  }
+  
+  .markdown-body input[type="submit"]:hover, .markdown-body input[type="submit"]:active {
+    cursor: pointer;
+    background: #00aa00;
+    color: #000000;
+  }
+  
+  .markdown-body input[type="submit"]:active {
+    background: #eee;
+    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+    box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  }
