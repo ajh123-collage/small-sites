@@ -42,8 +42,8 @@ footer a {
 
 .viewport {
     display: grid;
-    grid-template-rows: auto 1fr 100px 50px;
-    grid-template-columns: auto 45% 45% auto;
+    grid-template-rows: auto 1fr 100px 30px;
+    grid-template-columns: auto 40% 40% auto;
 }
 
 header {
@@ -101,6 +101,30 @@ nav .active {
     background-color: white;
 }
 
+main {
+  padding-top: 50px;
+}
+
+.btn {
+  display: block;
+  margin: 0 20px;
+  width: 12em;
+  padding: 10px;
+  border: 2px solid #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #000000;
+  background-color: #0000aa;
+  font-weight: bold;
+  -webkit-appearance: none;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.markdown-body a {
+
+}
 
 /* Forms */
   /* Style the form with a coloured background, along with curved corners and a drop shadow */
