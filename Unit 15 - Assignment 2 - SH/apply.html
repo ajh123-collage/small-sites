@@ -18,10 +18,10 @@
 						<img width="60" height="60" src="assets/images/logo.png">
 					</li>
 					<li>
-						<a href="index.html">About Us</a>
+						<a href="index.html">Home</a>
 					</li>
 					<li>
-						<a class="active" aria-current="page" href="contact.html">Contact Us</a>
+						<a class="active" aria-current="page" href="apply.html">Apply</a>
 					</li>
 					<li>
 						<a href="jobs.html">Jobs</a>
@@ -34,19 +34,16 @@
 		</header>
 
 		<main class="markdown-body body-full">
-			<h1>Contact / Application Form.</h1>
+			<h1>Application Form.</h1>
 			<p>
-				This contact form can be used to send us a message or 
-				apply for a <a href="jobs.html">job</a>. Take a look at 
+				This form can be used to apply for a <a href="jobs.html">job</a>. Take a look at 
 				our <a href="courses.html">development courses</a> so you can get 
 				started if you're not ready. 
-
-				For a job application you need to upload a file containing your information.
 			</p>
 			<p>
-				You may look at some of our 
-				<a href="jobs.html">team members</a> to see if you will 
-				fit it.							
+				All of our job requirements can be found at the bottom of
+				<a href="jobs.html">here</a>. Please upload your resume / portfoilio
+				so we know what work you have done in the past.			
 			</p>
 			
 			<hr>
@@ -55,16 +52,19 @@
 				<div>
 					<p>We'll never share your details with anyone else (unless required by law).</p>
 					<label for="exampleInputEmail1">Email address (*)</label><br>
-					<input type="email" id="exampleInputEmail1" required aria-describedby="emailHelp">
-					<br>
+					<input type="email" id="exampleInputEmail1">
+					<br><br>
+					<label for="q">Job (*)</label><br>
+					<select id="q" name="q" required>
+						<option>Full Stack Developer</option>
+						<option>Website Designer</option>
+						<option>Backend Engineer</option>
+					</select>
+					<br><br>
 					<label for="other">Other details</label><br>
-					<input type="file" id="other" multiple aria-describedby="emailHelp">
+					<input type="file" id="other" multiple>
 				</div>
 				<br>
-				<div>
-					<span>Message (*)</span><br>
-					<textarea name="q" id="q" aria-label="Message" required></textarea>
-				</div>
 				<button type="submit">Submit</button>
 			</form>
 		</main>
