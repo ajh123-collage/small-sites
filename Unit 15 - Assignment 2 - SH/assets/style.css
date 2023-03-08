@@ -42,8 +42,8 @@ footer a {
 
 .viewport {
     display: grid;
-    grid-template-rows: auto 1fr 100px 30px;
-    grid-template-columns: auto 40% 40% auto;
+    grid-template-rows: 60px auto auto 1fr 100px 30px;
+    grid-template-columns: 45px auto auto 45px;
 }
 
 header {
@@ -55,24 +55,40 @@ header {
 .body-full {
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row: 3;
+}
+
+.hero {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 2;
+    background-color: rgba(5, 218, 171, 0.87);
+    display: grid;
+    grid-template-columns: auto 45% 45% auto;
+}
+
+.hero div {
+    
 }
 
 .body-left {
-    grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .body-right {
-    grid-column: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
 
 footer {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row: 4;
+    grid-row: 6;
 }
 
 nav {
-    background-color: rgba(219, 218, 218, 0.87);
+    background-color: rgba(29, 154, 212, 0.87);
     width: 100%;
     height: 60px;
 }
@@ -88,17 +104,19 @@ nav ul li {
 }
   
 nav a {
-    padding-left: 4px;
-    padding-right: 4px;
-    margin-top: 3px;
+    padding-left: 13px;
+    padding-right: 13px;
     margin-left: 8px;
-    height: calc(60px - 3px);
+    height: 60px;
     display: block;
-    background-color: #c4c4c4c4;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 60px;
 }
 
-nav .active {
-    background-color: white;
+nav a:hover {
+    background-color: rgba(26, 122, 167, 0.87);
 }
 
 main {
@@ -106,159 +124,155 @@ main {
 }
 
 .btn {
-  display: block;
-  margin: 0 20px;
-  width: 12em;
-  padding: 10px;
-  border: 2px solid #000000;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  color: #000000;
-  background-color: #0000aa;
-  font-weight: bold;
-  -webkit-appearance: none;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.markdown-body a {
-
+    display: block;
+    margin: 0 20px;
+    width: 12em;
+    padding: 10px;
+    border: 2px solid #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #000000;
+    background-color: #0000aa;
+    font-weight: bold;
+    -webkit-appearance: none;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 /* Forms */
   /* Style the form with a coloured background, along with curved corners and a drop shadow */
   
   
-  .markdown-body form{
-    margin: 20px auto;
-    padding: 40px 20px;
-    overflow: auto;
-    background: #ffffff;
-    border: 1px solid #666;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;  
-    border-radius: 5px;
-  }
+    .markdown-body form{
+        margin: 20px auto;
+        padding: 40px 20px;
+        overflow: auto;
+        background: #ffffff;
+        border: 1px solid #666;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;  
+        border-radius: 5px;
+    }
   
   
-  /* Give form elements consistent margin, padding and line height */
+    /* Give form elements consistent margin, padding and line height */
   
-  .markdown-body form ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .markdown-body form ul li {
-    margin: .9em 0 0 0;
-    padding: 0;
-  }
-  
-  .markdown-body form * {
-    line-height: 1em;
-  }
-  
-  
-  /* The field labels */
-  
-  .markdown-body label {
-    display: block;
-    float: left;
-    clear: left;
-    text-align: right;
-    width: 15%;
-    padding: .4em 0 0 0;
-    margin: .15em .5em 0 0;
-  }
+    .markdown-body form ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .markdown-body form ul li {
+        margin: .9em 0 0 0;
+        padding: 0;
+    }
+    
+    .markdown-body form * {
+        line-height: 1em;
+    }
   
   
-  /* The fields */
+    /* The field labels */
   
-  .markdown-body input, .markdown-body select, .markdown-body textarea {
-    display: block;
-    margin: 0;
-    padding: .4em;
-    width: 80%;
-  }
+    .markdown-body label {
+        display: block;
+        float: left;
+        clear: left;
+        text-align: right;
+        width: 15%;
+        padding: .4em 0 0 0;
+        margin: .15em .5em 0 0;
+    }
   
-  .markdown-body input, .markdown-body textarea, .date {
-    border: 2px solid #666;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;    
-    border-radius: 5px;
-    background: #fff;
-  }
   
-  .markdown-body input {
-    font-size: .9em;
-  }
+    /* The fields */
   
-  .markdown-body select {
-    padding: 0;
-    margin-bottom: 2.5em;
-    position: relative;
-    top: .7em;
-  }
+    .markdown-body input, .markdown-body select, .markdown-body textarea {
+        display: block;
+        margin: 0;
+        padding: .4em;
+        width: 80%;
+    }
   
-  .markdown-body textarea {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    font-size: .9em;
-    height: 5em;
-    line-height: 1.5em;
-  }
+    .markdown-body input, .markdown-body textarea, .date {
+        border: 2px solid #666;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;    
+        border-radius: 5px;
+        background: #fff;
+    }
   
-  .markdown-body textarea#content {
-    font-family: "Courier New", courier, fixed;
-  }
+    .markdown-body input {
+        font-size: .9em;
+    }
+  
+    .markdown-body select {
+        padding: 0;
+        margin-bottom: 2.5em;
+        position: relative;
+        top: .7em;
+    }
+  
+    .markdown-body textarea {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: .9em;
+        height: 5em;
+        line-height: 1.5em;
+    }
+  
+    .markdown-body textarea#content {
+        font-family: "Courier New", courier, fixed;
+    }
     
   
-  /* Place a border around focused fields */
+    /* Place a border around focused fields */
   
-  .markdown-body form *:focus {
-    border: 2px solid #7c412b;
-    outline: none;
-  }
-  
-  
-  /* Display correctly filled-in fields with a green background */
-  
-  .markdown-body input:valid, textarea:valid {
-    background: #efe;
-  }
+    .markdown-body form *:focus {
+        border: 2px solid #7c412b;
+        outline: none;
+    }
   
   
-  /* Submit buttons */
+    /* Display correctly filled-in fields with a green background */
   
-  .buttons {
-    text-align: center;
-    margin: 40px 0 0 0;
-  }
+    .markdown-body input:valid, textarea:valid {
+        background: #efe;
+    }
   
-  .markdown-body input[type="submit"] {
-    display: inline;
-    margin: 0 20px;
-    width: 12em;
-    padding: 10px;
-    border: 2px solid #7c412b;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;  
-    border-radius: 5px;
-    color: #000000;
-    background: #008800;
-    font-weight: bold;
-    -webkit-appearance: none;
-  }
   
-  .markdown-body input[type="submit"]:hover, .markdown-body input[type="submit"]:active {
-    cursor: pointer;
-    background: #00aa00;
-    color: #000000;
-  }
+    /* Submit buttons */
   
-  .markdown-body input[type="submit"]:active {
-    background: #eee;
-    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
-    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
-  }
+    .buttons {
+        text-align: center;
+        margin: 40px 0 0 0;
+    }
+    
+    .markdown-body input[type="submit"] {
+        display: inline;
+        margin: 0 20px;
+        width: 12em;
+        padding: 10px;
+        border: 2px solid #7c412b;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;  
+        border-radius: 5px;
+        color: #000000;
+        background: #008800;
+        font-weight: bold;
+        -webkit-appearance: none;
+    }
+    
+    .markdown-body input[type="submit"]:hover, .markdown-body input[type="submit"]:active {
+        cursor: pointer;
+        background: #00aa00;
+        color: #000000;
+    }
+    
+    .markdown-body input[type="submit"]:active {
+        background: #eee;
+        -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+        -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+        box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+    }
