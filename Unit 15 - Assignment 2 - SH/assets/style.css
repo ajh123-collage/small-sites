@@ -18,7 +18,11 @@ footer a {
 .my_card {
     width: 18rem;
     height: auto;
-    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 2px solid #000000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     margin: 10px;
 }
 
@@ -42,8 +46,8 @@ footer a {
 
 .viewport {
     display: grid;
-    grid-template-rows: 60px auto auto 1fr 100px 30px;
-    grid-template-columns: 45px auto auto 45px;
+    grid-template-rows: 60px 500px auto 1fr 100px 30px;
+    grid-template-columns: auto 40% 40% auto;
 }
 
 header {
@@ -58,6 +62,13 @@ header {
     grid-row: 3;
 }
 
+.body-full-top {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
 .hero {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -68,7 +79,14 @@ header {
 }
 
 .hero div {
-    
+    height: 80%;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+}
+
+.hero ul {
+    margin-top: 70px;
+    list-style: none;
 }
 
 .body-left {
@@ -132,8 +150,8 @@ main {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
-    color: #000000;
-    background-color: #0000aa;
+    color: #ffffff !important;
+    background-color: #3f3ff5 !important;
     font-weight: bold;
     -webkit-appearance: none;
     text-decoration: none;
