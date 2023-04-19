@@ -168,6 +168,7 @@ main {
     background-color: #3f3ff5 !important;
     font-weight: bold;
     -webkit-appearance: none;
+    appearance: none;
     text-decoration: none;
     margin-bottom: 10px;
 }
@@ -294,6 +295,7 @@ main {
         background: #008800;
         font-weight: bold;
         -webkit-appearance: none;
+        appearance: none;
     }
     
     .markdown-body input[type="submit"]:hover, .markdown-body input[type="submit"]:active {
