@@ -89,7 +89,7 @@ header {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row: 2;
-    background-color: rgba(5, 218, 171, 0.87);
+    background-color: rgb(151, 255, 232);
     border: 2px solid #000000;
     display: grid;
     grid-template-columns: auto 45% 45% auto;
