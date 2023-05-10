@@ -61,7 +61,10 @@ footer a {
 
 .viewport {
     display: grid;
-    grid-template-rows: 60px 500px auto 1fr 100px 30px;
+    grid-template-rows: 60px 900px auto 1fr 100px 30px;
+    @media (min-width:600px) {
+        grid-template-rows: 60px 500px auto 1fr 100px 30px;
+    }
     grid-template-columns: auto 40% 40% auto;
 }
 
@@ -103,8 +106,30 @@ header {
 
 .hero ul {
     margin-top: 70px;
+    margin-left: -50px;
     list-style: none;
 }
+
+.hero-left {
+    float: left;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    @media (min-width:600px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+.hero-right {
+    float: right;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    @media (min-width:600px) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+}
+
 
 .body-left {
     grid-column-start: 2;
